@@ -1,6 +1,7 @@
 // Copyright 2022 NNTU-CS
 #include "alg.h"
 
-int main() {
+int main()
+{
     return 0;
 }

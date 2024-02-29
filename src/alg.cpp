@@ -1,6 +1,6 @@
 // Copyright 2022 NNTU-CS
-#include <cstdint>
 #include "alg.h"
+#include <cstdint>
 #include <iostream>
 #include <set>
 #include <cmath>
@@ -8,7 +8,7 @@
 bool checkPrime(uint64_t value)
 {
     // вставьте код функции
-    set<uint64_t> numbers;
+    ctd::set<uint64_t> numbers;
     for (uint64_t i = 2; i < (floor(sqrt(value)) + 1); i++)
     {
         if (value % i == 0)

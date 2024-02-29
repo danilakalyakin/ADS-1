@@ -5,31 +5,23 @@
 #include <set>
 #include <cmath>
 
-bool checkPrime(uint64_t value)
+bool checkPrime(uint64_t value) {}
+if (number <= 1)
 {
-    // вставьте код функции
-    ctd::set<uint64_t> numbers;
-    for (uint64_t i = 2; i < (floor(sqrt(value)) + 1); i++)
-    {
-        if (value % i == 0)
-        {
-            numbers.insert(i);
-            numbers.insert(value / i);
-        }
-    }
-    if (numbers.size() == 0 && value != 1 && value != 0)
-    {
-        return true;
-    }
-    else
+    return false;
+}
+for (int i = 2; i * i <= number; i++)
+{
+    if (number % i == 0)
     {
         return false;
     }
 }
+return true;
+}
 
 uint64_t nPrime(uint64_t n)
 {
-    // вставьте код функции
     uint64_t chislo = 2;
     uint64_t count = 0;
     while (count < n)
@@ -45,7 +37,6 @@ uint64_t nPrime(uint64_t n)
 
 uint64_t nextPrime(uint64_t value)
 {
-    // вставьте код функции
     uint64_t next = value + 1;
     while (true)
     {
@@ -59,7 +50,6 @@ uint64_t nextPrime(uint64_t value)
 
 uint64_t sumPrime(uint64_t hbound)
 {
-    // вставьте код функции
     uint64_t sum = 0;
     for (uint64_t i = 2; i < hbound; i++)
     {

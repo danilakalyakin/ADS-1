@@ -5,19 +5,20 @@
 #include <set>
 #include <cmath>
 
-bool checkPrime(uint64_t value) {}
-if (number <= 1)
+bool checkPrime(uint64_t value)
 {
-    return false;
-}
-for (int i = 2; i * i <= number; i++)
-{
-    if (number % i == 0)
+    if (number <= 1)
     {
         return false;
     }
-}
-return true;
+    for (int i = 2; i * i <= number; i++)
+    {
+        if (number % i == 0)
+        {
+            return false;
+        }
+    }
+    return true;
 }
 
 uint64_t nPrime(uint64_t n)

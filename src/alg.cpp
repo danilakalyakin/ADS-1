@@ -2,7 +2,7 @@
 #include "alg.h"
 #include <cstdint>
 
- 
+
 bool checkPrime(uint64_t value) {
     if (value <= 1) {
         return false;
